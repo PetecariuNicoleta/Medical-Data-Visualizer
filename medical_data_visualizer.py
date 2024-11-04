@@ -3,16 +3,17 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 
-# 1
-df = None
+# 1 Import the data from medical_examination.csv and assign it to the df variable
+df = pd.read_csv('medical_examination.csv')
 
-# 2
+# 2 Create the overweight column in the df variable
 df['overweight'] = None
 
-# 3
+# 3 Normalize data by making 0 always good and 1 always bad. If the value of cholesterol or gluc is 1, set the value to 0. 
+#If the value is more than 1, set the value to 1.
 
 
-# 4
+# 4Draw the Categorical Plot in the draw_cat_plot function
 def draw_cat_plot():
     # 5
     df_cat = None
@@ -35,7 +36,7 @@ def draw_cat_plot():
     return fig
 
 
-# 10
+# 10 Draw the Heat Map in the draw_heat_map function
 def draw_heat_map():
     # 11
     df_heat = None
